@@ -2,16 +2,19 @@ import { Container } from "react-bootstrap";
 import "./App.scss";
 
 // !redux
-
+import { Provider } from "react-redux";
+import store from "./redux/store";
 
 // ?components
 import Counter from "./components/Counter";
 
 function App() {
   return (
-    <Container className="text-center">
-      <Counter />
-    </Container>
+    <Provider store={store}>
+      <Container className="text-center">
+        <Counter />
+      </Container>
+    </Provider>
   );
 }
 
