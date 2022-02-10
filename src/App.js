@@ -1,10 +1,14 @@
+import { Container } from "react-bootstrap";
 import "./App.scss";
+
+// ?components
+import Counter from "./components/Counter";
 
 function App() {
   return (
-    <div className="App">
-      <h1 className="text-primary">Hello World</h1>
-    </div>
+    <Container className="text-center">
+      <Counter />
+    </Container>
   );
 }
 
