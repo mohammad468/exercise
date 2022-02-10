@@ -1,3 +1,3 @@
 export const increase = () => {
-  return { type: "INCREASE" };
+  return { type: "increase" };
 };
