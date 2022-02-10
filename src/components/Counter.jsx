@@ -2,6 +2,7 @@ import React from "react";
 
 // !redux
 import { increase } from "../redux/counter/counterAction";
+import { decrease } from "../redux/counter/counterAction";
 import { useSelector, useDispatch } from "react-redux";
 import { Button } from "react-bootstrap";
 
@@ -15,13 +16,21 @@ const Counter = () => {
       <Button
         className="mx-2"
         onClick={() => {
-          console.log(state);
+          //   console.log(state);
           dispatch(increase());
         }}
       >
         Up
       </Button>
-      <Button className="mx-2">Down</Button>
+      <Button
+        className="mx-2"
+        onClick={() => {
+          //   console.log(state);
+          dispatch(decrease());
+        }}
+      >
+        Down
+      </Button>
     </div>
   );
 };
