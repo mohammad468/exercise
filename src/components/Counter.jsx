@@ -7,7 +7,7 @@ import { useSelector, useDispatch } from "react-redux";
 import { Button } from "react-bootstrap";
 
 const Counter = () => {
-  const state = useSelector((state) => state.counter);
+  const state = useSelector((state) => state.counterState.counter);
   const dispatch = useDispatch();
 
   return (
@@ -16,7 +16,7 @@ const Counter = () => {
       <Button
         className="mx-2"
         onClick={() => {
-          //   console.log(state);
+          console.log(state);
           dispatch(increase());
         }}
       >
@@ -25,7 +25,7 @@ const Counter = () => {
       <Button
         className="mx-2"
         onClick={() => {
-          //   console.log(state);
+          console.log(state);
           dispatch(decrease());
         }}
       >
