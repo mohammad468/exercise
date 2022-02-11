@@ -7,6 +7,7 @@ import store from "./redux/store";
 
 // ?components
 import Counter from "./components/Counter";
+import User from "./components/User";
 import Users from "./components/Users";
 
 function App() {
@@ -14,6 +15,7 @@ function App() {
     <Provider store={store}>
       <Container className="text-center">
         <Counter />
+        <User />
         <Users />
       </Container>
     </Provider>
