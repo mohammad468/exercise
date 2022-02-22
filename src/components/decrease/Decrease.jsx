@@ -8,11 +8,18 @@ const Decrease = () => {
   const { increase, setIncrease } = useIncrease();
 
   const decreaseHandler = () => {
-    setIncrease(increase - 1);
-    console.log(increase);
+    if (increase > 0) {
+      setIncrease(increase - 1);
+    } else {
+      setIncrease(0);
+    }
   };
 
-  return <Button onClick={decreaseHandler}>Decrease</Button>;
+  return (
+    <Button className="my-1 mx-1" onClick={decreaseHandler}>
+      Decrease
+    </Button>
+  );
 };
 
 export default Decrease;

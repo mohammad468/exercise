@@ -14,11 +14,10 @@ const App = () => {
     <Row>
       <Col className="d-flex justify-content-center align-items-center flex-column">
         <ShowNumberIncreaser />
-        <Increaser />
-      </Col>
-      <Col className="d-flex justify-content-center align-items-center flex-column">
-        <ShowNumberDecrease />
-        <Decrease />
+        <div>
+          <Increaser />
+          <Decrease />
+        </div>
       </Col>
     </Row>
   );

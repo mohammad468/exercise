@@ -9,10 +9,13 @@ const Increaser = () => {
 
   const increaseHandler = () => {
     setIncrease(increase + 1);
-    console.log(increase);
   };
 
-  return <Button onClick={increaseHandler}>Increase</Button>;
+  return (
+    <Button className="my-1 mx-1" onClick={increaseHandler}>
+      Increase
+    </Button>
+  );
 };
 
 export default Increaser;
