@@ -3,7 +3,7 @@ import React from "react";
 const IncreaseContext = React.createContext({});
 
 export const IncreaseContextProvider = ({ children }) => {
-  const [increase, setIncrease] = useState();
+  const [increase, setIncrease] = useState(0);
 
   return (
     <CoinsContext.Provider value={{ increase, setIncrease }}>
