@@ -7,12 +7,12 @@ import { useIncrease } from "../context/IncreaseContext";
 const Increaser = () => {
   const { increase, setIncrease } = useIncrease();
 
-  const clgHandler = () => {
+  const increaseHandler = () => {
     setIncrease(increase + 1);
     console.log(increase);
   };
 
-  return <Button onClick={clgHandler}>Increase</Button>;
+  return <Button onClick={increaseHandler}>Increase</Button>;
 };
 
 export default Increaser;
