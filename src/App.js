@@ -6,9 +6,11 @@ const increaseContext = React.createContext();
 
 function App() {
   return (
-    <Container>
-      <Counter />
-    </Container>
+    <increaseContext.Provider>
+      <Container>
+        <Counter />
+      </Container>
+    </increaseContext.Provider>
   );
 }
 
