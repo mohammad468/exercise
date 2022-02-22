@@ -1,20 +1,11 @@
-import { useState } from "react";
-import { Container } from "react-bootstrap";
-import "./App.scss";
-import Counter from "./components/Counter";
+import React from 'react';
 
-export const increaseContext = React.createContext();
-
-function App() {
-  const [increase, setIncrease] = useState(0);
-
+const App = () => {
   return (
-    <increaseContext.Provider value={increase}>
-      <Container>
-        <Counter />
-      </Container>
-    </increaseContext.Provider>
+    <div>
+      <h1>hello World</h1>
+    </div>
   );
-}
+};
 
 export default App;
