@@ -4,18 +4,21 @@ import "./App.scss";
 
 // ? components
 import Increaser from "./components/increase/Increaser";
-import ShowNumber from "./components/increase/ShowNumber";
+import ShowNumberIncreaser from "./components/increase/ShowNumber";
+
+import Decrease from "./components/decrease/Decrease";
+import ShowNumberDecrease from "./components/decrease/ShowNumber";
 
 const App = () => {
   return (
     <Row>
       <Col className="d-flex justify-content-center align-items-center flex-column">
-        <ShowNumber />
+        <ShowNumberIncreaser />
         <Increaser />
       </Col>
       <Col className="d-flex justify-content-center align-items-center flex-column">
-        <ShowNumber />
-        <Increaser />
+        <ShowNumberDecrease />
+        <Decrease />
       </Col>
     </Row>
   );
