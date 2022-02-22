@@ -2,7 +2,7 @@ import React from "react";
 import { Button } from "react-bootstrap";
 
 // ?context
-import { useIncrease } from "../context/IncreaseContext";
+import { useIncrease } from "../../context/IncreaseContext";
 
 const Increaser = () => {
   const { increase, setIncrease } = useIncrease();

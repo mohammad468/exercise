@@ -1,7 +1,7 @@
 import React from "react";
 
 // ?context
-import { useIncrease } from "../context/IncreaseContext";
+import { useIncrease } from "../../context/IncreaseContext";
 
 const ShowNumber = () => {
   const { increase } = useIncrease();
