@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext, useState } from "react";
 
 const IncreaseContext = React.createContext({});
 
@@ -6,9 +6,9 @@ export const IncreaseContextProvider = ({ children }) => {
   const [increase, setIncrease] = useState(0);
 
   return (
-    <CoinsContext.Provider value={{ increase, setIncrease }}>
+    <IncreaseContext.Provider value={{ increase, setIncrease }}>
       {children}
-    </CoinsContext.Provider>
+    </IncreaseContext.Provider>
   );
 };
 
